@@ -91,6 +91,17 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- MockMvc standalone (WorkflowExecutionControllerTest) exige a API servlet; o app e WebFlux e nao a traz -->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.locationtech.jts.io</groupId>
 			<artifactId>jts-io-common</artifactId>
